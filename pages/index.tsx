@@ -6,14 +6,13 @@ const Home: NextPage = () => {
   const [accounts, setAccounts] = useState<any[]>([]);
 
   return (
-    <>
-      <div className="flexCenter">
+    <div className="overlay">
+      <div>
         <NavBar accounts={accounts} setAccounts={setAccounts} />
-      </div>
-      <div className="flexCenter">
         <MainMint accounts={accounts} setAccounts={setAccounts} />
       </div>
-    </>
+      <div className="moving-background"></div>
+    </div>
   );
 };
 
