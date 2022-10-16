@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
+import { MainMint, NavBar } from "../components";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
     <div className="flexCenter bg-nft-red-violet ">
-      <h1 className="text-3xl text-blue-400 font-bold underline">Foxy FXT 🦊</h1>
+      <NavBar />
+      <MainMint />
     </div>
   );
 };
